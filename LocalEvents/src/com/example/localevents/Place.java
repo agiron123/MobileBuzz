@@ -1,7 +1,37 @@
 package com.example.localevents;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Place {
 	
+	@SerializedName("latitude")
+	public double latitude;
+	
+	@SerializedName("longitude")
+	public double longitude;
+	
+	@SerializedName("address")
+	public String address;
+	
+	@SerializedName("city")
+	public String city;
+	
+	@SerializedName("name")
+	public String name;
+	
+	@SerializedName("state")
+	public String state;
+	
+	@SerializedName("url")
+	public String url;
+	
+	@SerializedName("zip")
+	public String zip;
+	
+	@SerializedName("foursquare_id")
+	public String foursquare_id;
+	
+	/*
 	double latitude;
 	double longitude;
 
@@ -20,11 +50,16 @@ public class Place {
 		this.foursquare_id = foursquare_id;
 	}
 	
+	*/
 	/*
 	Place[] myPlaces = new Place[25];
 	myPlaces[0] = new Place("Laughing Skull Lounge", "asdfhasdkjfhasdkfjas");
 	*/
 
+	
+	
+	
+	/*
 	public Place(double lat, double lon, String address1, String city, String name, String state, String url, String zip, String foursquare_id)
 	{
 		this.latitude = lat;
@@ -118,5 +153,5 @@ public class Place {
 	{
 		this.zip = zip;
 	}
-		
+	*/
 }

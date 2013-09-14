@@ -2,16 +2,34 @@ package com.example.localevents;
 
 import java.sql.Date;
 
-/*
-<description_raw>String</description_raw>
-<end_date>0001-01-01T00:00:00</end_date>
-<end_date_string>String</end_date_string>
-<end_time_string>String</end_time_string>
-<event_image>String</event_image>
-*/
+import com.google.gson.annotations.SerializedName;
 
 public class LocalEvent {
 
+	//Creating the parameters needed for gson
+	@SerializedName("event_description")
+	public String event_description;
+	
+	@SerializedName("start_date")
+	public Date start_date;
+	
+	@SerializedName("end_date")
+	public Date end_date;
+	
+	@SerializedName("start_time")
+	public String start_time;
+	
+	@SerializedName("end_time")
+	public String end_time;
+	
+	@SerializedName("event_image")
+	public String event_image;
+	
+	
+	//Leaving this in for now, probably going to remove later.
+	//this code is no longer needed because of the gson implementation
+	
+	/*
 	String description;
 	Date startDate;
 	Date endDate;
@@ -88,5 +106,5 @@ public class LocalEvent {
 	{
 		this.eventImage = eventImage;
 	}
-	
+	*/
 }
